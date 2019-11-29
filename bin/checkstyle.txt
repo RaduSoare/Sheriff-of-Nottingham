@@ -1,0 +1,21 @@
+Starting audit...
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/common/Constants.java:80:29: Name 'goodsFactory' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'. [ConstantName]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/main/GameLogic.java:24: Line is longer than 100 characters (found 110). [LineLength]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/main/GameLogic.java:43: Line is longer than 100 characters (found 112). [LineLength]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/main/GameLogic.java:49: Line is longer than 100 characters (found 112). [LineLength]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/main/GameLogic.java:55: Line is longer than 100 characters (found 112). [LineLength]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/main/GameLogic.java:61: Line is longer than 100 characters (found 112). [LineLength]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/main/GameLogic.java:71: Line is longer than 100 characters (found 102). [LineLength]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/main/GameLogic.java:77: Line is longer than 100 characters (found 102). [LineLength]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/main/GameLogic.java:83: Line is longer than 100 characters (found 102). [LineLength]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/main/GameLogic.java:89: Line is longer than 100 characters (found 102). [LineLength]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/player/BasePlayer.java:19:12: More than 7 parameters (found 9). [ParameterNumber]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/player/BribedPlayer.java:20:10: More than 7 parameters (found 9). [ParameterNumber]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/player/BribedPlayer.java:173:8: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/player/BribedPlayer.java:174:9: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/player/GreedyPlayer.java:17:10: More than 7 parameters (found 9). [ParameterNumber]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/player/Player.java:50:10: More than 7 parameters (found 9). [ParameterNumber]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/player/Player.java:228: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] /mnt/c/Users/radus/Desktop/tema/src/com/tema1/player/Player.java:228:7: 'if' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 18 errors.

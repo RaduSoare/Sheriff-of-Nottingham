@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="checkstyle-7.3-all2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/com/tema1/main/checker/checkstyle/checkstyle-7.3-all.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

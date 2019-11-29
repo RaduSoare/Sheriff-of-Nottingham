@@ -1,0 +1,77 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fc29277f151, pid=7258, tid=7260
+#
+# JRE version: OpenJDK Runtime Environment (11.0.4+11) (build 11.0.4+11-post-Ubuntu-1ubuntu218.04.3)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.4+11-post-Ubuntu-1ubuntu218.04.3, mixed mode, sharing, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# V  [libjvm.so+0xe0f151]
+#
+# Core dump will be written. Default location: core.7258 (may not exist)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: com/tema1/main/Main checker/tests/in/1round2players-illegal-only-test4.in dummy
+
+Host: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz, 4 cores, 7G, Ubuntu 18.04.2 LTS
+Time: Fri Oct 25 20:29:23 2019 DST elapsed time: 10 seconds (0d 0h 0m 10s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fc28c028000):  GCTaskThread "GC Thread#0" [stack: 0x00007fc290062000,0x00007fc290162000] [id=7260]
+
+Stack: [0x00007fc290062000,0x00007fc290162000],  sp=0x00007fc290160e10,  free space=1019k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0xe0f151]
+V  [libjvm.so+0xd7aeea]
+V  [libjvm.so+0xbc4a5e]
+
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x0000000000000010
+
+Register to memory mapping:
+
+RAX=0x0 is NULL
+RBX=0x00007fc2683a09c0 points into unknown readable memory: 90 d0 c4 92 c2 7f 00 00
+RCX=0x0 is NULL
+RDX=0x0 is NULL
+RSP=0x00007fc290160e10 points into unknown readable memory: 70 0e 16 90 c2 7f 00 00
+RBP=0x00007fc290160e40 points into unknown readable memory: c0 0e 16 90 c2 7f 00 00
+RSI=0x0 is NULL
+RDI=0x00007fc290160d70 points into unknown readable memory: 90 06 da 92 c2 7f 00 00
+R8 =0x0 is NULL
+R9 =0x00000000ffffffff is an unallocated location in the heap
+R10=0x0 is NULL
+R11=0x0 is NULL
+R12=0x00007fc290160e1c points into unknown readable memory: ff ff ff ff
+R13=0x00007fc28c028000 points into unknown readable memory: 50 71 cf 92 c2 7f 00 00
+R14=0x0 is NULL
+R15=0x00007fc293d3f870 is pointing into the stack for thread: 0x00007fc28c011800
+
+
+Registers:
+RAX=0x0000000000000000, RBX=0x00007fc2683a09c0, RCX=0x0000000000000000, RDX=0x0000000000000000
+RSP=0x00007fc290160e10, RBP=0x00007fc290160e40, RSI=0x0000000000000000, RDI=0x00007fc290160d70
+R8 =0x0000000000000000, R9 =0x00000000ffffffff, R10=0x0000000000000000, R11=0x0000000000000000
+R12=0x00007fc290160e1c, R13=0x00007fc28c028000, R14=0x0000000000000000, R15=0x00007fc293d3f870
+RIP=0x00007fc29277f151, EFLAGS=0x0000000000010202, CSGSFS=0x00000053002b0033, ERR=0x0000000000000000
+  TRAPNO=0x0000000000000000
+
+Top of Stack: (sp=0x00007fc290160e10)
+0x00007fc290160e10:   00007fc290160e70 ffffffff8c028000
+0x00007fc290160e20:   00007fc292d16398 00007fc28c028000
+0x00007fc290160e30:   00007fc290062000 0000000000100000
+0x00007fc290160e40:   00007fc290160ec0 00007fc2926eaeea 
+
+Instructions: (pc=0x00007fc29277f151)
+0x00007fc29277f051:   35 67 48 0f 00 31 c0 4c 89 e7 83 c3 01 e8 0d 03
+0x00007fc29277f061:   dc ff 41 39 5e 08 77 d7 5b 4c 89 e7 41 5c 41 5d
+0x00007fc29277f071:   41 5e 5d e9 c7 09 dc ff 0f 1f 80 00 00 00 00 31
+0x00007fc29277f081:   c0 4c 89 ee 4c 89 e7 e8 e3 02 dc ff 83 c3 01 41
+0x00007fc29277f091:   39 5e 08 77 aa 5b 4c 89 e7 41 5c 41 5d 41 5e 5d
+0x00007fc29277f0a1:   e9 
